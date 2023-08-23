@@ -6,9 +6,9 @@
   "type": "module",
   "scripts": {
     "dev": "Set NODE_ENV=Development&& nodemon server.js",
-    "start": "Set NODE_ENV=Production&& node server.js"
+    "start": "node server.js"
   },
-  "author": "Affluent Jacob",
+  "author": "Akanimo Jacob",
   "license": "MIT",
   "dependencies": {
     "bcrypt": "^5.1.0",
