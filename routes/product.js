@@ -10,8 +10,6 @@ router.get('/all', getAllProducts)
 // admin routes
 router.get('/admin', isAuthenticated, isAdmin, getAdminProducts);
 
-
-
 // get product details & chaining the update product route
 router.route('/single/:id')
 .get(getProductsDetails)
