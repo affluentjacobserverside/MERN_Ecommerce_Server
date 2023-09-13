@@ -55,6 +55,7 @@ schema.pre("save", async function(next){
 this.password = await bcrypt.hash(this.password, 10);
 
 });
+
 // compare password entered
 schema.methods.comparePassword = async function (enteredPassword){
 return await bcrypt.compare(enteredPassword, this.password)
@@ -67,5 +68,5 @@ schema.methods.generateToken = function(){
    });
 }
 
-
+// export Use Model
 export const User = mongoose.model('User', schema);
